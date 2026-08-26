@@ -3,29 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Tech | Dafny</title>
+    <title>Blog Tech & Ciência | Dafny</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            color: #059669;
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #4b5563;
+            font-size: 1.15rem;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .hero-card {
+            background-color: #ffffff;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e5e7eb;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 24px;
+        }
+
+        .post-author {
+            display: inline-block;
+            font-size: 0.85rem;
+            color: #059669;
+            font-weight: 700;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background-color: #ecfdf5;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        .hero-card.bee .post-author {
+            color: #d97706;
+            background-color: #fffbebfb;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+            color: #111827;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #374151;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        .divider {
+            border: 0;
+            height: 1px;
+            background: #e5e7eb;
+            margin: 24px 0;
+        }
+
+        ul {
+            margin-left: 24px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>Meu Blog Tech!</h1>
-            <p>Compartilhando conhecimentos sobre tecnologia, ciência e programação</p>
+            <h1>Meu Blog Tech & Ciência 🌿</h1>
+            <p>Compartilhando conhecimentos sobre tecnologia, ciência e maravilhas da natureza</p>
         </header>
 
         <main>
+            <!-- CARD 1: ABELHAS -->
+            <article class="hero-card bee">
+                <img src="abelha.jpg" alt="Abelha colhendo néctar" class="hero-image">
+                
+                <span class="post-author">Por Dafny Moraes</span>
+                <h2>O Fantástico Mundo das Abelhas 🐝</h2>
+                
+                <p>Boas-vindas ao meu post! Hoje vamos explorar como as abelhas desempenham um papel essencial na manutenção da vida no planeta Terra.</p>
+
+                <hr class="divider">
+
+                <p>As abelhas são insetos voadores pertencentes à ordem <em>Hymenoptera</em> e à superfamília <em>Apoidea</em>. Conhecidas principalmente por seu papel na polinização e pela produção de mel e cera, existem mais de 20.000 espécies conhecidas no mundo todo.</p>
+                
+                <p>Elas habitam quase todos os continentes, com exceção da Antártida, e vivem em colónias altamente organizadas ou de forma solitária, dependendo da espécie.</p>
+
+                <h3>Organização na Colmeia</h3>
+                <p>Em uma colmeia de abelhas eusociais (como a abelha-melífera), existe uma divisão de trabalho perfeitamente estruturada:</p>
+                <ul>
+                    <li><strong>Rainha:</strong> Única fêmea fértil da colmeia, responsável por pôr milhares de ovos todos os dias.</li>
+                    <li><strong>Operárias:</strong> Fêmeas estéreis que realizam todo o trabalho: limpeza, defesa, construção dos favos e busca por alimento.</li>
+                    <li><strong>Zangões:</strong> Machos cuja principal função é fecundar uma nova rainha durante o voo nupcial.</li>
+                </ul>
+
+                <h3>O Processo de Produção do Mel</h3>
+                <p>O mel é o alimento armazenado pelas abelhas para garantir a sobrevivência da colónia durante períodos de escassez:</p>
+                <ul>
+                    <li><strong>Coleta de Néctar:</strong> As operárias colhem o néctar das flores usando sua tromba.</li>
+                    <li><strong>Transformação Enzimática:</strong> O néctar é misturado com enzimas digestivas da abelha.</li>
+                    <li><strong>Desidratação:</strong> Na colmeia, as abelhas batem as asas rapidamente para evaporar a água do néctar até transformá-lo em mel viscoso.</li>
+                    <li><strong>Selagem:</strong> O mel pronto é armazenado nos favos e selado com uma fina camada de cera.</li>
+                </ul>
+
+                <h3>Importância Fundamental para o Planeta</h3>
+                <ul>
+                    <li><strong>Polinização Global:</strong> Cerca de 75% das plantas com flores e 35% das culturas agrícolas do mundo dependem de polinizadores como as abelhas.</li>
+                    <li><strong>Segurança Alimentar:</strong> Sem as abelhas, a produção de frutas, legumes e grãos sofreria um impacto devastador.</li>
+                    <li><strong>Preservação Ambiental:</strong> Ajudam a manter a biodiversidade de florestas e ecossistemas naturais.</li>
+                </ul>
+            </article>
+
+            <!-- CARD 2: BORBOLETAS -->
             <article class="hero-card">
-                <!-- Imagem linkada diretamente da web ou da sua pasta com o nome original -->
                 <img src="50564964-monarca-borboleta-empoleirado-em-rosa-zinia-flor-alimentando-foto.jpeg" alt="Borboleta Monarca" class="hero-image">
                 
                 <span class="post-author">Por Dafny Moraes</span>
-                <h2>Curiosidades da Natureza & Metamorfose</h2>
+                <h2>Curiosidades da Natureza & Metamorfose 🦋</h2>
                 
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação, ciência e curiosidades do mundo da tecnologia.</p>
+                <p>Neste artigo, vamos mergulhar no fascinante ciclo de vida das borboletas e sua incrível transformação ao longo do tempo.</p>
 
                 <hr class="divider">
 
